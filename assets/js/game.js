@@ -12,6 +12,8 @@ var words = [
     ["d", "e", "v", "e", "l", "o", "p", "e", "r"], 
     ["a", "u", "s", "t", "i", "n"]
   ];
+
+//Global variables
 var alreadyGuessed = document.getElementById("alreadyGuessed");
 var guessesLeft = document.getElementById("guessesLeft");
 var wrongLetters = document.getElementById("wrongLetters");
@@ -23,9 +25,6 @@ var countersoFar = 0;
 var correctLetters = "";
 var correctSound = document.getElementById("correct");
 var wrongSound = document.getElementById("wrong");
-
-
-console.log("Choosen word " + choosenWord);
 
 
 for( var i = 0; i < workingWord.length; i++ ){
@@ -40,6 +39,7 @@ function playWrong(){
   wrongSound.play();
 }
 
+//Resets variable values
 function restart() {
 console.clear();
 var previousRandomWord = randomWord;
@@ -86,7 +86,7 @@ var foundLetter = false;
 for (i = 0; i < choosenWord.length ; i++) {
 if (choosenWord[i] == x) {
   if (workingWord[i] == "_") {
-      //Flip the character on workingWord
+      //Flip the letter if correct
       console.log("You got one!");
       flipCharacter(i, x);
       foundLetter = true;
@@ -126,7 +126,7 @@ window.addEventListener("keydown", checkKeyPress, false);
 function checkKeyPress(e) {
 
 if ((numberOfAttempts - countersoFar) == 0) {
-//He has lost repeat new word
+//Looses game, user tries another word
 playWrong();
 alert("Game Over! The correct word was " + choosenWord.join("").toUpperCase() +" :(" + " Try Again.");
 restart();
