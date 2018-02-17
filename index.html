@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="assets/css/style.css" type="text/css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <title>Document</title>
+</head>
+<body>
+    
+    <div class="container">
+        <div class="row justify-content-md-center">
+            <div class="col-md-8" align="center">
+                <h1 class="title">Hangman</h1>
+                <h1 class="theme">By Liseth Chitica</h1>
+                <div class="layout">
+                    <h4>Press any key to get started</h4>
+                    <p id="guessedWord"></p>
+                    <p class="play">Number of attempts remaining: <span id="guessesLeft">10</span></p>
+                    <p class="play">Letters already guessed:<span id="wrongLetters"></span> </p>
+                    <p id="alreadyGuessed"></p>
+                </div>
+            </div>    
+        </div>
+    </div>
+    <audio id="correct">
+        <source src="assets/audio/correct.mp3" type="audio/mpeg">
+    </audio>
+    <audio id="wrong">
+            <source src="assets/audio/wrong.mp3" type="audio/mpeg">
+        </audio>
+    <script src="assets/js/game.js" type="text/javascript"></script>
+</body>
+</html>

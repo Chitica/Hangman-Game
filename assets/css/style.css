@@ -1,0 +1,61 @@
+
+
+body::after {
+    content: "";
+    background: url("../images/hangman.jpg");
+    background-size: cover;
+    opacity: 0.8;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;   
+  }
+/*////title/////*/
+.title{
+    text-align: center;
+    color:red;
+    font-size: 100px;
+}
+.container{
+    border:white solid 1px;
+    background: white;
+    margin-top: 200px;
+    height: 500px;
+
+}
+
+#guessedWord{
+    font-size: 25px;
+    font-weight: bolder;
+}
+
+/*/////theme//////*/
+.theme{
+    text-align: center;
+    color: #9DA957;
+    border-radius: 50%;
+
+}
+
+#guessesLeft{
+    color: #9DA957;
+}
+
+#wrongLetters{
+    color: #9DA957;
+}
+
+.play{
+    border: solid red 1px;
+    background: rgba(228, 5, 5, 0.582);
+    width: 50%;
+    color: white;
+    padding: 10px;
+    
+}
+
+.layout{
+    border: dashed 1px red;
+}
