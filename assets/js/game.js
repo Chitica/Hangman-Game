@@ -24,7 +24,7 @@ var correctLetters = "";
 var correctSound = document.getElementById("correct");
 var wrongSound = document.getElementById("wrong");
 
-prompt();
+
 console.log("Choosen word " + choosenWord);
 
 
