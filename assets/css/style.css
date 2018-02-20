@@ -16,12 +16,12 @@ body::after {
 .title{
     text-align: center;
     color:red;
-    font-size: 100px;
+    font-size: 4em;
 }
 .container{
     border:white solid 1px;
     background: white;
-    margin-top: 200px;
+    margin-top: 100px;
     height: 500px;
 
 }
@@ -40,17 +40,17 @@ body::after {
 }
 
 #guessesLeft{
-    color: #9DA957;
+    color: rgb(203, 235, 207);
 }
 
 #wrongLetters{
-    color: #9DA957;
+    color: rgb(203, 235, 207);
 }
 
 .play{
     border: solid red 1px;
     background: rgba(228, 5, 5, 0.582);
-    width: 50%;
+    width: 80%;
     color: white;
     padding: 10px;
     
@@ -58,4 +58,5 @@ body::after {
 
 .layout{
     border: dashed 1px red;
+    height: 300px;;
 }
